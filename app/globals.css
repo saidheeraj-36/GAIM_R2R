@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+}
+
+a {
+  @apply text-accent hover:text-accent/80 transition;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-md bg-accent px-4 py-2 font-semibold text-slate-950 shadow-lg shadow-accent/30 transition hover:bg-accent/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-md border border-slate-700 bg-transparent px-4 py-2 font-semibold text-slate-100 transition hover:border-accent hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+}
+
+.card {
+  @apply rounded-2xl border border-slate-800 bg-slate-900/60 p-6 shadow-lg shadow-black/20 backdrop-blur;
+}
+
+.input {
+  @apply w-full rounded-lg border border-slate-700 bg-slate-900 px-4 py-3 text-sm text-slate-100 shadow-inner shadow-black/20 focus:border-accent focus:outline-none;
+}
+
+.label {
+  @apply mb-2 block text-sm font-medium text-slate-300;
+}
+
+.section-title {
+  @apply text-lg font-semibold text-slate-100;
+}
+
+.badge {
+  @apply inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-slate-300;
+}
+
+.empty-state {
+  @apply flex min-h-[200px] flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-slate-700 bg-slate-900/40 p-8 text-center text-slate-400;
+}
+
+.error-text {
+  @apply text-sm text-rose-400;
+}
